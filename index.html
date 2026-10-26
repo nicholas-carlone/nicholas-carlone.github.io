@@ -3,80 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nicholas Carlone's personal portfolio. Software projects, writing on AI and security, and a little about me." />
+  <meta name="theme-color" content="#f7f6f2" />
   <title>Nicholas Carlone | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1>Nicholas Carlone</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="wordmark" href="#home">Nicholas Carlone<span aria-hidden="true">.</span></a>
+      <ul class="nav-links">
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener noreferrer">Résumé <span aria-hidden="true">↗</span></a></li>
       </ul>
     </nav>
   </header>
-
-  <section class="hero">
-    <h2>Computer Science Student & Software Developer</h2>
-    <p>I build practical software projects and enjoy full-stack development, data, and problem solving.</p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="resume.pdf" class="btn btn-outline" target="_blank">Resume</a>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a third year computer science student interested in software engineering, web development,
-      and building tools that are useful and well-designed.
-    </p>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-      <article class="card">
-        <h3>Synchro</h3>
-        <p>A web app that helps students organize assignment deadlines in one place.</p>
-        <p><strong>Tech:</strong> HTML, CSS, TypeScript, Express, MongoDB</p>
-        <div class="links">
-          <a href="https://github.com/jamespineiro/cs320-team-a-ardvark-" target="_blank">GitHub</a>
-          <!--
-          <a href="#">Live Demo</a>
-          -->
+  <main id="main" class="container">
+    <section id="home" class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Computer science · Software development</p>
+        <h1 id="intro-title">Hi, I’m Nicholas<span class="accent">.</span></h1>
+        <p class="hero-description">I’m a computer science student interested in software engineering, web development, and building useful tools.</p>
+        <p class="hero-note">Curious about how things work. Interested in making them work better.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">View projects <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="resume.pdf" target="_blank" rel="noopener noreferrer">Résumé <span aria-hidden="true">↗</span></a>
         </div>
-      </article>
+      </div>
+      <figure class="portrait">
+        <img src="images/nicholas-carlone.jpg" alt="Nicholas Carlone outdoors" width="764" height="1331" fetchpriority="high" />
+        <figcaption>A little about the person behind the work.</figcaption>
+      </figure>
+    </section>
 
-      <article class="card">
-        <h3>Weather Tool</h3>
-        <p>A tool that retrieves and processes weather data at certain universities.</p>
-        <p><strong>Tech:</strong> JavaScript, Jest</p>
-        <div class="links">
-          <a href="#">GitHub</a>
-        </div>
-      </article>
-    </div>
-  </section>
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Building</p><h2 id="projects-title">Projects</h2></div>
+        <p>A few things I’ve worked on.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="card-label">Web application</span>
+          <h3>Synchro</h3>
+          <p>A web app that helps students organize assignment deadlines in one place.</p>
+          <p class="tech"><strong>Tech:</strong> HTML, CSS, TypeScript, Express, MongoDB</p>
+          <div class="links"><a href="https://github.com/jamespineiro/cs320-team-a-ardvark-" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <span class="card-label">Data &amp; testing</span>
+          <h3>Weather Tool</h3>
+          <p>A tool that retrieves and processes weather data at certain universities.</p>
+          <p class="tech"><strong>Tech:</strong> JavaScript, Jest</p>
+          <div class="links"><a href="#">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
 
-  <section id="resume" class="section">
-    <h2>Resume</h2>
-    <p><a href="resume.pdf" target="_blank">Download my resume</a></p>
-  </section>
+    <section id="writing" class="section" aria-labelledby="writing-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / Exploring</p><h2 id="writing-title">Selected writing</h2></div>
+        <p>Research, synthesis, and questions worth asking.</p>
+      </div>
+      <div class="writing-list">
+        <article class="writing-entry">
+          <div class="writing-meta"><span>Security &amp; AI</span><span>CS 360 · Spring 2026</span></div>
+          <div class="writing-body">
+            <p class="card-label">Co-authored course literature review</p>
+            <h3>Securing LLMs Against Prompt Injection Attacks</h3>
+            <p>A review of prompt injection attacks and defenses, comparing training-time and runtime approaches through their security, cost, and deployment tradeoffs.</p>
+            <p class="contribution"><strong>My contribution:</strong> Substantial research and synthesis; authored the introduction and background sections.</p>
+            <p class="byline">Co-authored with Nishil Adina, Ethan Emerson, and Ananya Singh.</p>
+          </div>
+        </article>
+        <article class="writing-entry">
+          <div class="writing-meta"><span>AI &amp; education</span><span>CICS 305 · 2025</span></div>
+          <div class="writing-body">
+            <p class="card-label">Individual course literature review</p>
+            <h3>Artificial Intelligence in Education</h3>
+            <p>An examination of how AI supports students and educators, alongside the challenges of privacy, academic integrity, and over-reliance on technology.</p>
+            <a class="text-link" href="writing/ai-in-education.pdf" target="_blank" rel="noopener noreferrer">Read the paper <span class="file-type">PDF</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ncarlone0810@gmail.com">ncarlone0810@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/nicholas-carlone" target="_blank">nicholas-carlone</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/nicholascarlone" target="_blank">nicholascarlone</a></p>
-  </section>
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div><p class="eyebrow">03 / A little context</p><h2 id="about-title">Beyond the code.</h2></div>
+      <div class="about-copy">
+        <p class="about-lead">I enjoy taking a question or a practical problem and working toward something useful.</p>
+        <p>I’m a third year computer science student interested in software engineering and web development. My work so far spans collaborative software projects and writing about the ways AI affects education and security.</p>
+        <p>I’m drawn to both sides of the process: understanding the ideas behind a system and turning those ideas into something people can use.</p>
+        <a class="text-link" href="resume.pdf" target="_blank" rel="noopener noreferrer">More about my background <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2026 Nicholas Carlone</p>
-  </footer>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div><p class="eyebrow">Keep in touch</p><h2 id="contact-title">Let’s connect.</h2><p>Have a question or want to talk about something I’m working on?</p></div>
+      <div class="contact-links">
+        <a class="contact-email" href="mailto:ncarlone0810@gmail.com">ncarlone0810@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="social-links"><a href="https://github.com/nicholas-carlone" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/nicholascarlone" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer"><p>© 2026 Nicholas Carlone</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
