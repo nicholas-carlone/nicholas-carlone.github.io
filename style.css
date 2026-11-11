@@ -48,13 +48,18 @@ h1 { font-size: clamp(3.5rem, 6vw, 5.4rem); max-width: 600px; margin-block: 25px
 .section-heading { display: flex; justify-content: space-between; gap: 28px; align-items: end; margin-bottom: 32px; }
 h2 { font-size: clamp(2.3rem, 4vw, 3.2rem); margin-top: 13px; }
 .section-heading > p { font-size: .9rem; color: var(--muted); max-width: 280px; }
-.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .project-card { padding: 30px; border: 1px solid var(--line); background: #fbfaf7; border-radius: 8px; display: flex; flex-direction: column; align-items: start; }
 .card-label { font-size: .7rem; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
 h3 { font-size: 1.3rem; letter-spacing: -.025em; font-weight: 600; line-height: 1.35; }
 .project-card h3 { margin-block: 15px 12px; font-size: 1.55rem; }
 .project-card > p { color: var(--muted); font-size: .94rem; }
 .project-card .tech { font-size: .78rem; margin-block: 24px; }
+.project-demo { width: 100%; margin-bottom: 24px; }
+.project-demo video { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); }
+.project-demo video:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+.project-demo figcaption { margin-top: 12px; font-size: .78rem; line-height: 1.6; color: var(--muted); }
+.project-demo figcaption strong { color: var(--ink); font-weight: 600; }
 .tech strong { color: var(--ink); font-weight: 600; }
 .links { margin-top: auto; font-size: .88rem; }
 .links a, .text-link { text-decoration: none; font-weight: 600; }
